@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?">
+    <link rel="stylesheet" href="styly.css">
+    <title>פיצה מצפה יריחו</title>
+</head>
+<body>
+    <!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">בית</a>
+    <a href="#menu" class="w3-bar-item w3-button">תפריט</a>
+    <a href="#about" class="w3-bar-item w3-button">המלצות</a>
+    <a href="#myMap" class="w3-bar-item w3-button">צור קשר</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">פיצה<br>מצפה יריחו</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>פיצה<br>מצפה יריחו</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">לתפריט</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">תפריט</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">פיצה</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">שתיה</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">תוספות</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>פיצה גדולה</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h1>
+      <hr>
+   
+      <h1><b>פיצה בינונית</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+      <hr>
+      
+      <h1><b>פיצה קטנה</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
+      <hr>
+
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>קולה</b>  <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
+      <hr>
+   
+      <h1><b>ספרייט</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
+      <hr>
+      
+      <h1><b>מים</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+      <hr>
+
+      <h1><b>סודה</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>זיתים</b><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <hr>
+   
+      <h1><b>תירס</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+      <hr>
+      
+      <h1><b>פיטריות</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+      <hr>
+      
+      <h1><b>זיתים שחורים</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">המלצות</h1>
+    <p></p>
+    <h1><b>שעות פתיחה</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>שני 16:00 - 21:00</p>
+        <p>שני 16:00 - 21:00</p>
+        <p>שלישי 16:00 - 21:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>רביעי 16:00 - 21:00</p>
+        <p>חמישי 16:00 - 21:00</p>
+        <p>סגור בשישי ושבת</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">צור קשר</h1>
+    <p> .מצא אותנו במצפה יריחו, רחוב דביר, ליד הככר </p>
+    <p class="w3-xxlarge" id="middle"><strong>הזמן פיצה או שלח הודעה</strong></p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="שם" required name="שם"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="סוג הפיצה" required name="Message"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="לקחת או לשבת " required name="take or stey"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">שלח </button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>האתר הוכן על ידי אברהם ווסטברוק </p>
+</footer>
+</body>
+<script src="js.js"></script>
+</html>
